@@ -1,0 +1,47 @@
+.Navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.Navbar-logo{
+    font-weight: bold;
+    color: blue;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+.Navbar-menu{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: start;
+    margin-right: 2rem;
+    padding-left: 0;
+}
+
+.Navbar-links{
+    color:white;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+}
+
+.Navbar-links:hover{
+    background-color: blue;
+    border-radius: 4px;
+    transition:  all 0.2s ease-out;
+}
+
+.fa-bars, .fa-times{
+    color: white;
+}

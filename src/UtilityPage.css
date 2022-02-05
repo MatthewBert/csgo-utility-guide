@@ -1,0 +1,22 @@
+.UtilityPage{
+    margin: auto;
+    text-align: center;
+}
+
+.UtilityPageImg{
+    height: 75%;
+    width: 75%;
+}
+
+.UtilityPage-content{
+    text-align: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.UtilityPage-description{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
