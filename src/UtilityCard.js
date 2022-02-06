@@ -4,14 +4,15 @@ import "./UtilityCard.css";
 
 export class UtilityCard extends Component {
   render() {
-    
     const {
       map,
+      mapTitle,
       type,
       start_location,
       land_location,
       movement,
-      img,
+      img_throw,
+      img_stand,
       video,
       description,
       id,
@@ -20,23 +21,23 @@ export class UtilityCard extends Component {
     return (
       <Link
         className="UtilityCard-link"
-        to={{
-          pathname: UtilityURL,
-          state: {
-            map,
-            type,
-            start_location,
-            land_location,
-            movement,
-            img,
-            video,
-            description,
-            id,
-          },
+        to={UtilityURL}
+        state={{
+          map: map,
+          mapTitle: mapTitle,
+          type: type,
+          start_location: start_location,
+          land_location: land_location,
+          movement: movement,
+          img_throw: img_throw,
+          img_stand: img_stand,
+          video: video,
+          description: description,
+          id: id,
         }}
       >
         <div className="UtilityCard">
-          <img className="UtilityCard-image" src={img} alt={id} />
+          <img className="UtilityCard-image" src={img_throw} alt={id} />
           <h1 className="UtilityCard-info">
             {land_location} {type} from {start_location}
           </h1>

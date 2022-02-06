@@ -53,7 +53,6 @@ export class UtilityList extends Component {
   }
 
   render() {
-    console.log("state is: ", this.state.CurrentMap);
     return (
       <div>
         <Container maxWidth="lg">

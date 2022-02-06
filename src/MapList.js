@@ -5,6 +5,7 @@ import seedMaps from "./seedData/seedMaps";
 
 export class MapList extends Component {
   render() {
+    console.log("MapList")
     return (
       <div>
         <Container maxWidth="lg">
