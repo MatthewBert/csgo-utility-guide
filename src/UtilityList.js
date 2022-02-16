@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import UtilityCard from "./UtilityCard";
-import Container from "@material-ui/core/Container";
+import { Grid } from "@material-ui/core";
 import seedUtilityDust2 from "./seedData/seedUtilityDust2";
 import seedUtilityVertigo from "./seedData/seedUtilityVertigo";
 
@@ -54,13 +54,11 @@ export class UtilityList extends Component {
 
   render() {
     return (
-      <div>
-        <Container maxWidth="lg">
+        <Grid container>
           <div className="container">
             {this.seedUtility(this.state.CurrentMap)}
           </div>
-        </Container>
-      </div>
+        </Grid>
     );
   }
 }

@@ -1,18 +1,4 @@
-// map:             MapName,
-// mapTitle:        MapName without the de_ prefix,
-// type:            [smoke, flash, etc]
-// side:            [Terrorist, Counter-Terrorist]
-// start_location:  Mid,
-// land_location:   Mid Window,
-// movement:        Jump Throw,
-// img_throw:       image file of where to aim,
-// img_stand:       image file of where to stand,
-// video:           video source for the throw,
-// description:     describe the utilty
-// id:              [MapName_StartLocation_LandLocation_Type]
-
 //import [type]_[start_location]_[land_location] from ".."
-
 import Molly_Car_Barrel from "../img/utility-dust2/Molly-Car.jpg";
 import Molly_Window_OutsideTunnel from "../img/utility-dust2/Molly-Window.jpg";
 import Smoke_OutsideA_ALongCorner from "../img/utility-dust2/Smoke-ALongCorner.jpg";
@@ -25,6 +11,19 @@ import Smoke_CTRamp_Long from "../img/utility-dust2/Smoke-CTRamp-LONG.jpg";
 import Smoke_CTSpawn_Xbox from "../img/utility-dust2/Smoke-CTSpawn.jpg";
 import Smoke_Xbox_TSpawn from "../img/utility-dust2/Smoke-Xbox.jpg";
 
+// map:             MapName,
+// mapTitle:        MapName without the de_ prefix,
+// type:            [smoke, flash, etc]
+// side:            [Terrorist, Counter-Terrorist]
+// start_location:  Mid,
+// land_location:   Mid Window,
+// movement:        [Stationary, Walking, Running]
+// technique:       [Left Click Throw, Right Click Throw, Jump Throw]
+// img_throw:       image file of where to aim,
+// img_stand:       image file of where to stand,
+// video:           video source for the throw,
+// description:     describe the utilty
+// id:              [MapName_StartLocation_LandLocation_Type]
 export default [
   {
     map: "de_dust2",
@@ -33,7 +32,8 @@ export default [
     side: "Terrorist",
     start_location: "Long A Barrel",
     land_location: "Car",
-    movement: "Jump Throw",
+    movement: "Stationary",
+    technique: "Jump Throw",
     img_throw: Molly_Car_Barrel,
     img_stand: "",
     video: "N/A",
@@ -48,7 +48,8 @@ export default [
     side: "Terrorist",
     start_location: "Outside B Tunnel",
     land_location: "Window",
-    movement: "Throw",
+    movement: "Stationary",
+    technique: "Left Click Throw",
     img_throw: Molly_Window_OutsideTunnel,
     img_stand: "",
     video: "N/A",
@@ -63,7 +64,8 @@ export default [
     side: "Terrorist",
     start_location: "Outside A",
     land_location: "A Long Corner",
-    movement: "Throw",
+    movement: "Stationary",
+    technique: "Left Click Throw",
     img_throw: Smoke_OutsideA_ALongCorner,
     img_stand: "",
     video: "N/A",
@@ -78,7 +80,8 @@ export default [
     side: "Terrorist",
     start_location: "Upper Tunnel",
     land_location: "B Doors",
-    movement: "Throw",
+    movement: "Stationary",
+    technique: "Left Click Throw",
     img_throw: Smoke_BDoors_UpperTunnel,
     img_stand: "",
     video: "N/A",
@@ -93,7 +96,8 @@ export default [
     side: "Terrorist",
     start_location: "Upper Tunnel",
     land_location: "Double Stack",
-    movement: "Throw",
+    movement: "Stationary",
+    technique: "Left Click Throw",
     img_throw: Smoke_DoubleStack_UpperTunnel,
     img_stand: "",
     video: "N/A",
@@ -108,7 +112,8 @@ export default [
     side: "Terrorist",
     start_location: "Upper Tunnel",
     land_location: "Plat",
-    movement: "Throw",
+    movement: "Stationary",
+    technique: "Left Click Throw",
     img_throw: Smoke_Plat_UpperTunnel,
     img_stand: "",
     video: "N/A",
@@ -124,6 +129,7 @@ export default [
     start_location: "Lower Tunnel",
     land_location: "CT Mid",
     movement: "Throw",
+    technique: "Left Click Throw",
     img_throw: Smoke_CTMid_LowerTunnel,
     img_stand: "",
     video: "N/A",
@@ -138,7 +144,8 @@ export default [
     side: "Terrorist",
     start_location: "Cat",
     land_location: "CT Ramp",
-    movement: "Throw",
+    movement: "Stationary",
+    technique: "Left Click Throw",
     img_throw: Smoke_CTRamp_Cat,
     img_stand: "",
     video: "N/A",
@@ -153,7 +160,8 @@ export default [
     side: "Terrorist",
     start_location: "A Long",
     land_location: "CT Ramp",
-    movement: "Throw",
+    movement: "Stationary",
+    technique: "Jump Throw",
     img_throw: Smoke_CTRamp_Long,
     img_stand: "",
     video: "N/A",
@@ -168,7 +176,8 @@ export default [
     side: "Terrorist",
     start_location: "Xbox",
     land_location: "CT Spawn",
-    movement: "Throw",
+    movement: "Stationary",
+    technique: "Left Click Throw",
     img_throw: Smoke_CTSpawn_Xbox,
     img_stand: "",
     video: "N/A",
@@ -183,7 +192,8 @@ export default [
     side: "Terrorist",
     start_location: "T Spawn",
     land_location: "Xbox",
-    movement: "Jump Throw",
+    movement: "Stationary",
+    technique: "Jump Throw",
     img_throw: Smoke_Xbox_TSpawn,
     img_stand: "",
     video: "N/A",

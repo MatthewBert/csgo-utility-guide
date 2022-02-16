@@ -1,6 +1,5 @@
 .UtilityCard{
     border: 2px solid black;
-    margin: 1px;
 }
 
 .UtilityCard-image{
@@ -20,4 +19,5 @@
 .UtilityCard-link{
     text-decoration: none;
     color: black;
+    margin: 5px 5px;
 }

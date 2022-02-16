@@ -1,46 +1,112 @@
-.UtilityPage{
-    margin: auto;
-    text-align: center;
+.UtilityPage {
+  margin: auto;
+  text-align: center;
 }
 
-.UtilityPageImg{
-    height: 75%;
-    width: 75%;
+.CHstyle {
+  fill: #fff;
+  stroke: #000;
+  stroke-miterlimit: 10;
 }
-.crosshair{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.6;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+
+.UtilityPageImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ImageHeader {
+  display: flex;
+  background-color: royalblue;
+  color: white;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ImageHeaderText {
+  z-index: 2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ImageHeaderText > p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.ImageButtons {
     display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
+  position: absolute;
+  z-index: 1;
+  float: right;
+  padding-top: 1px;
 }
 
-.UtilityPage-content{
-    text-align: left;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-size: 1.5em;
-    font-weight: bold;
+.crosshair {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
 }
 
-.UtilityPage-description{
+.BackgroundColor{
     background-color: rgba(0, 0, 0, 0.5);
-    text-align: left;
+}
+
+.UtilityPage-content {
+  text-align: left;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.UtilityPage-description {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: left;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.UtilityPage-description > p {
+   font-size: 150%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.UtilityPage-description > h3{
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 2em;
+    padding: 15px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
