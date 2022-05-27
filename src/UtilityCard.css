@@ -21,3 +21,9 @@
     color: black;
     margin: 5px 5px;
 }
+
+.Icon-image{
+    position: relative;
+    height: 32px;
+    width: 32px;
+}

@@ -1,0 +1,18 @@
+.parent{
+    border: 2px solid black;
+}
+
+.UtilityCard-info{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    margin-top: -8px;
+    height: auto;
+    min-height: 100px;
+    width: 400px;
+}
+
+.UtilityCard-image{
+    height: 225px;
+    width: 400px;
+    cursor: pointer;
+}

@@ -2,6 +2,7 @@ import { Button, Container, Grid } from "@material-ui/core";
 import { Box } from "@material-ui/system";
 import React, { Component, useState } from "react";
 import { useLocation } from "react-router-dom";
+import UtilityPageImage from "./UtilityPageImage";
 import "./UtilityPage.css";
 
 function UtilityPage() {
@@ -11,6 +12,7 @@ function UtilityPage() {
     map,
     mapTitle,
     type,
+    icon,
     side,
     start_location,
     land_location,
@@ -18,6 +20,7 @@ function UtilityPage() {
     technique,
     img_throw,
     img_stand,
+    util_land,
     video,
     description,
     id,
@@ -26,29 +29,32 @@ function UtilityPage() {
   const ImageSelector = () => {
     const [selectedMedia, setSelectedMedia] = useState(media.img_throw);
     return (
-      <div className="BackgroundColor">
-        <div className="ImageButtons">
-          <Button
-            variant="contained"
-            onClick={() => setSelectedMedia(media.img_throw)}
-          >
-            Where to Throw
-          </Button>
-          <Button
-            variant="contained"
-            onClick={() => setSelectedMedia(media.img_stand)}
-          >
-            Where to Stand
-          </Button>
-          <Button
-            variant="contained"
-            onClick={() => setSelectedMedia(media.video)}
-          >
-            Video
-          </Button>
-        </div>
-        <img src={selectedMedia} alt={id} className="UtilityPageImg" />
+      <div>
+        <UtilityPageImage img_throw={img_throw} img_stand={img_stand} util_land={util_land} id={id} video={video}/>
       </div>
+      // <div className="BackgroundColor">
+      //   <div className="ImageButtons">
+      //     <Button
+      //       variant="contained"
+      //       onClick={() => setSelectedMedia(media.img_throw)}
+      //     >
+      //       Where to Throw
+      //     </Button>
+      //     <Button
+      //       variant="contained"
+      //       onClick={() => setSelectedMedia(media.img_stand)}
+      //     >
+      //       Where to Stand
+      //     </Button>
+      //     <Button
+      //       variant="contained"
+      //       onClick={() => setSelectedMedia(media.video)}
+      //     >
+      //       Video
+      //     </Button>
+      //   </div>
+      //   <img src={selectedMedia} alt={id} className="UtilityPageImg" />
+      // </div>
     );
   };
 
