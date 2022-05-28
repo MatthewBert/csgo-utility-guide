@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import UtilityCardImage from "./UtilityCardImage";
 import "./UtilityCard.css";
 
 export class UtilityCard extends Component {
@@ -47,17 +46,13 @@ export class UtilityCard extends Component {
       >
         <div>
           <div className="UtilityCard">
-            <UtilityCardImage
-              img_throw={img_throw}
-              img_stand={img_stand}
-              util_land={util_land}
-              id={id}
-            />
-            <h1 className="UtilityCard-info">
-              {land_location} {type} from {start_location}
-              <img className="Icon-image" src={icon} />
-            </h1>
+            <img src={img_throw} alt={id} className="UtilityCard-image-pov" />
+            <img src={util_land} alt={id} className="UtilityCard-image-land" />
           </div>
+          <p className="UtilityCard-info">
+            {land_location} {type} from {start_location}
+            <img className="Icon-image" alt={type} src={icon} />
+          </p>
         </div>
       </Link>
     );
