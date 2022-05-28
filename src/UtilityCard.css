@@ -1,60 +1,74 @@
-.UtilityCard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border: 2px solid black;
-    height: 216px;
-    width: 384px;
-    position: relative;
+.UtilityCard-link {
+  text-decoration: none;
+  color: black;
+  margin: 5px 5px;
+  transition: all 1s ease;
+}
+.UtilityCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid black;
+  height: 216px;
+  width: 384px;
+  position: relative;
+}
+.UtilityCard-image-left {
+  height: 216px;
+  width: 192px;
+  cursor: pointer;
+  overflow: hidden;
+  border-right: 1px solid black;
+}
+.UtilityCard-image-right {
+  height: 216px;
+  width: 192px;
+  cursor: pointer;
+  overflow: hidden;
+  border-left: 1px solid black;
+}
+.UtilityCard-image-pov {
+  height: 216px;
+  width: 384px;
+  right: 96px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.UtilityCard-image-land {
+  height: 216px;
+  width: 384px;
+  right: 96px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.UtilityCard-info {
+  font-weight: bold;
+  font-size: xx-large;
+  background-color: rgba(65, 105, 225, 0.8);
+  border: 2px solid black;
+  border-top: 0px;
+  margin: 0;
+  min-height: 90px;
+  width: 384px;
 }
 
-.UtilityCard-image-left{
 
-}
-.UtilityCard-image-right{
-    
-}
-
-.UtilityCard-image-pov{
-    height: 216px;
-    width: 384px;
-    flex-shrink: 0;
-    right: 192px;
+.Icon-image {
     position: absolute;
-    cursor: pointer;
-    float: left;
-    object-fit: contain;
-}
-.UtilityCard-image-land{
-    height: 216px;
-    width: 384px;
-    flex-shrink: 0;
-    left: 192px;
-    position: absolute;
-    cursor: pointer;
-    float: right;
-    object-fit: contain;
-}
-.UtilityCard-info{
-    font-weight: bold;
-    font-size: xx-large;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid black;
-    border-top: 0px;
-    margin: 0;
-    min-height: 90px;
-    width: 384px;
+  height: 3rem;
+  width: 3rem;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: rgb(65, 105, 225);
 }
 
-.UtilityCard-link{
-    text-decoration: none;
-    color: black;
-    margin: 5px 5px;
-}
-
-.Icon-image{
-    position: relative;
-    height: 32px;
-    width: 32px;
+.UtilityCard-link:hover {
+    transform: scale(1.05);
+    z-index: 1;
 }
