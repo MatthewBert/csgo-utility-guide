@@ -1,7 +1,10 @@
+/* UtilityCard is 384px by 216px which is 24rem x 13.5rem */
+/* https://nekocalc.com/px-to-rem-converter */
+
 .UtilityCard-link {
   text-decoration: none;
   color: black;
-  margin: 5px 5px;
+  margin: 0.625rem 0.625rem;
   transition: all 1s ease;
 }
 .UtilityCard {
@@ -9,66 +12,85 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border: 2px solid black;
-  height: 216px;
-  width: 384px;
+  border: 0.125rem solid black;
+  height: 13.5rem; 
+  width: 24rem;
   position: relative;
+}
+.gallery__images {
+  display: grid;
+  grid-template-columns: auto 3.125rem auto;
 }
 .UtilityCard-image-left {
-  height: 216px;
-  width: 192px;
+  height: 13.5rem; 
+  width: 12rem;
   cursor: pointer;
   overflow: hidden;
-  border-right: 1px solid black;
+  border-right: 0.063rem solid black;
 }
 .UtilityCard-image-right {
-  height: 216px;
-  width: 192px;
+  height: 13.5rem; 
+  width: 12rem;
   cursor: pointer;
   overflow: hidden;
-  border-left: 1px solid black;
+  border-left: 0.063rem solid black;
 }
 .UtilityCard-image-pov {
-  height: 216px;
-  width: 384px;
-  right: 96px;
+  height: 13.5rem; 
+  width: 24rem;
+  right: 4rem;
   position: relative;
   cursor: pointer;
-  overflow: hidden;
 }
 .UtilityCard-image-land {
-  height: 216px;
-  width: 384px;
-  right: 96px;
+  transform: skew(20deg);
   position: relative;
-  cursor: pointer;
+  right: 25%;
+  height: 100%;
+}
+.UtilityCard-image-land-container{
+  position: absolute;
+  left: 55%;
+  top: 0;
+  bottom: 0;
+  transform: skew(-20deg);
   overflow: hidden;
+  border-left: 0.125rem solid black;
 }
 .UtilityCard-info {
-  font-weight: bold;
-  font-size: xx-large;
   background-color: rgba(65, 105, 225, 0.8);
-  border: 2px solid black;
-  border-top: 0px;
+  border: 0.125rem solid black;
+  border-top: 0rem;
   margin: 0;
-  min-height: 90px;
-  width: 384px;
+  min-height: 5rem;
+  width: 24rem;
+  text-align: center;
 }
 
-
 .Icon-image {
-    position: absolute;
+  position: absolute;
   height: 3rem;
   width: 3rem;
   z-index: 1;
   top: 0;
-  right: 0;
-  border-left: 2px solid black;
-  border-bottom: 2px solid black;
+  left: 0;
+  border-right: 0.125rem solid black;
+  border-bottom: 0.125rem solid black;
   background-color: rgb(65, 105, 225);
 }
 
 .UtilityCard-link:hover {
-    transform: scale(1.05);
-    z-index: 1;
+  transform: scale(1.085);
+  z-index: 1;
+}
+
+p.Header {
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 0;
+}
+
+p.Subtitle {
+  font-size: x-large;
+  margin: 0;
 }

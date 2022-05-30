@@ -1,36 +1,36 @@
 .UtilityPageImg1 {
-    position: relative;
-    height: 100%;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 .UtilityPageImg2 {
-    position: absolute;
-    top:30px;
-    right:30px;
-    height: 30%;
-    width: 30%;
+  position: absolute;
+  top: 1.875rem;
+  right: 1.875rem;
+  max-height: 11.25rem;
+  max-width: 20rem;
 }
 .UtilityPageImgExtra {
-    position: relative;
-    height: 100%;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
-.parent{
-    position: relative;
-    top: 0;
-    left: 0;
-    cursor:pointer;
-    border-style: solid;
-    border-color: royalblue;
-    height: 648px;
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  border-style: solid;
+  border-color: royalblue;
+  max-height: 33.75rem;
 }
 
-.parent2{
-    position: relative;
-    top: 0;
-    left: 0;
-    border-style: solid;
-    border-color: royalblue;
-    height: 648px;
+.parent2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border-style: solid;
+  border-color: royalblue;
+  max-height: 33.75rem;
 }

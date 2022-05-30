@@ -47,20 +47,27 @@ export class UtilityCard extends Component {
         <div>
           <div className="UtilityCard">
             <img className="Icon-image" alt={type} src={icon} />
-            <div className="UtilityCard-image-left">
+            <div className="gallery__images">
               <img src={img_throw} alt={id} className="UtilityCard-image-pov" />
+              <div className="UtilityCard-image-land-container">
+                <img
+                  src={util_land}
+                  alt={id}
+                  className="UtilityCard-image-land"
+                />
+              </div>
+            </div>
+            {/* <div className="UtilityCard-image-left">
             </div>
             <div className="UtilityCard-image-right">
-              <img
-                src={util_land}
-                alt={id}
-                className="UtilityCard-image-land"
-              />
-            </div>
+            </div> */}
           </div>
-          <p className="UtilityCard-info">
-            {land_location} {type} from {start_location}
-          </p>
+          <div className="UtilityCard-info">
+            <p className="Header">
+              {land_location} {type}
+            </p>
+            <p className="Subtitle">from {start_location}</p>
+          </div>
         </div>
       </Link>
     );

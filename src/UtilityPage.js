@@ -62,7 +62,6 @@ function UtilityPage() {
   //https://stackoverflow.com/questions/61263669/does-material-ui-have-an-image-component
 
   return (
-    <Container>
       <div className="UtilityPage">
         <div>
           <div className="ImageHeader">
@@ -125,7 +124,6 @@ function UtilityPage() {
           </div>
         </div>
       </div>
-    </Container>
 
     // <Container maxWidth="lg">
     //   <div className="UtilityPage">
