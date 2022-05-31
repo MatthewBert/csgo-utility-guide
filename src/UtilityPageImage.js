@@ -12,33 +12,76 @@ export default function UtilityPageImage({
   id,
   video,
 }) {
-  const [isActive, setActive] = useState("false");
-  const posIndex = 1;
-  const negIndex = -1;
+  const [isActive1, setActive1] = useState("false");
+  const handleToggle1 = () => {
+    setActive1(!isActive1);
+  };
 
-  const handleToggle = () => {
-    setActive(!isActive);
+  const [isActive2, setActive2] = useState("false");
+  const handleToggle2 = () => {
+    setActive2(!isActive2);
+  };
+
+  const [isActive3, setActive3] = useState("false");
+  const handleToggle3 = () => {
+    setActive3(!isActive3);
+  };
+
+  const [isActive4, setActive4] = useState("false");
+  const handleToggle4 = () => {
+    setActive4(!isActive4);
   };
 
   return (
     <div>
-      <div className="parent" onClick={handleToggle}>
+      <div className="parent">
         <img
+          onClick={handleToggle1}
           src={img_throw}
           alt={id}
-          className={isActive ? "UtilityPageImg1" : "UtilityPageImg2"}
-          style={isActive ? { zIndex: negIndex } : { zIndex: posIndex }}
+          className={isActive1 ? "UtilityPageImgGrid" : "UtilityPageImgView"}
         />
         <img
-          src="https://media.discordapp.net/attachments/314196129694613504/774726039494459412/sktugffqhtx51.png?width=896&height=672"
+          onClick={handleToggle2}
+          src={util_land}
           alt={id}
-          className={isActive ? "UtilityPageImg2" : "UtilityPageImg1"}
-          style={isActive ? { zIndex: posIndex } : { zIndex: negIndex }}
+          className={isActive2 ? "UtilityPageImgGrid" : "UtilityPageImgView"}
         />
-      </div>
-      <div className="parent2">
-        <img src={util_land} className="UtilityPageImgExtra" />
+        <img
+          onClick={handleToggle3}
+          src="https://wallpaperaccess.com/full/2807743.jpg"
+          alt={id}
+          className={isActive3 ? "UtilityPageImgGrid" : "UtilityPageImgView"}
+        />
+        <iframe
+        onClick={handleToggle4}
+          src="https://www.youtube.com/embed/hBLl0AMxr7s"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; "
+          allowfullscreen
+          alt={id}
+          className={isActive4 ? "UtilityPageImgGrid" : "UtilityPageImgView"}
+        ></iframe>
       </div>
     </div>
   );
 }
+
+// <div>
+//   <div className="parent" onClick={handleToggle}>
+//     <img
+//       src={img_throw}
+//       alt={id}
+//       className={isActive ? "UtilityPageImg1" : "UtilityPageImg2"}
+//       style={isActive ? { zIndex: negIndex } : { zIndex: posIndex }}
+//     />
+//     <img
+//       src="https://media.discordapp.net/attachments/314196129694613504/774726039494459412/sktugffqhtx51.png?width=896&height=672"
+//       alt={id}
+//       className={isActive ? "UtilityPageImg2" : "UtilityPageImg1"}
+//       style={isActive ? { zIndex: posIndex } : { zIndex: negIndex }}
+//     />
+//   </div>
+//   <div className="parent2">
+//     <img src={util_land} className="UtilityPageImgExtra" />
+//   </div>
+// </div>

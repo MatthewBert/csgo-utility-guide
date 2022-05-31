@@ -1,6 +1,9 @@
 .UtilityPage {
-  margin: 3rem 15rem 3rem;
+  margin: 2rem auto;
+  width: 80rem;
   text-align: center;
+  /* border-style: solid;
+  border-color: red; */
 }
 
 .CHstyle {
@@ -9,40 +12,53 @@
   stroke-miterlimit: 10;
 }
 
+/* these rem values are for 1920x1080 / 1.5 */
 .UtilityPageImg {
-  position: absolute;
   position: relative;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+  height: 45rem;
+  width: 80rem;
 }
 
 .ImageHeader {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
   background-color: royalblue;
   color: white;
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .ImageHeaderText {
-  z-index: 2;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 20rem;
+  border-style: solid;
+  border-color: rgb(29, 47, 100);
+  border-width: 0.125rem;
+  border-left-width: 0.063rem;
+  border-right-width: 0.063rem;
 }
 
 .ImageHeaderText > p {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.HeaderText {
+  font-weight: bold;
+  font-size: medium;
+}
+.SubtitleText {
+  font-weight: normal;
+  font-size: larger;
 }
 
 .ImageButtons {
-    display: flex;
+  display: flex;
   position: absolute;
   z-index: 1;
   float: right;
-  padding-top: 1px;
+  padding-top: 0.063rem;
 }
 
 .crosshair {
@@ -70,8 +86,8 @@
   transition: transform 0.3s;
 }
 
-.BackgroundColor{
-    background-color: rgba(0, 0, 0, 0.5);
+.BackgroundColor {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .UtilityPage-content {
@@ -90,19 +106,19 @@
 }
 
 .UtilityPage-description > p {
-   font-size: 150%;
+  font-size: 150%;
   margin-top: 0px;
   margin-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.UtilityPage-description > h3{
-    background-color: rgba(0, 0, 0, 0.3);
-    margin-top: 0px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    font-size: 2em;
-    padding: 15px 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.UtilityPage-description > h3 {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 2em;
+  padding: 15px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }

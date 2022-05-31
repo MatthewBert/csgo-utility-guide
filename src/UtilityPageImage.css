@@ -1,3 +1,14 @@
+.parent {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  /* border-top-width: 0rem;
+  border-style: solid;
+  border-color: rgb(29, 47, 100); */
+}
 .UtilityPageImg1 {
   position: relative;
   height: 100%;
@@ -16,21 +27,21 @@
   width: 100%;
 }
 
-.parent {
+.UtilityPageImgGrid {
   position: relative;
-  top: 0;
-  left: 0;
-  cursor: pointer;
+  display: block;
+  height: 22.375rem;
+  width: 39.875rem;
+  border-width: .063rem;
   border-style: solid;
-  border-color: royalblue;
-  max-height: 33.75rem;
+  border-color: rgb(29, 47, 100);
 }
 
-.parent2 {
-  position: relative;
+.UtilityPageImgView {
+  position: absolute;
   top: 0;
   left: 0;
-  border-style: solid;
-  border-color: royalblue;
-  max-height: 33.75rem;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
