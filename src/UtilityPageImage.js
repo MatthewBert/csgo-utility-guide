@@ -54,7 +54,7 @@ export default function UtilityPageImage({
           className={isActive3 ? "UtilityPageImgGrid" : "UtilityPageImgView"}
         />
         <iframe
-        onClick={handleToggle4}
+          onClick={handleToggle4}
           src="https://www.youtube.com/embed/hBLl0AMxr7s"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; "
           allowfullscreen
@@ -65,23 +65,3 @@ export default function UtilityPageImage({
     </div>
   );
 }
-
-// <div>
-//   <div className="parent" onClick={handleToggle}>
-//     <img
-//       src={img_throw}
-//       alt={id}
-//       className={isActive ? "UtilityPageImg1" : "UtilityPageImg2"}
-//       style={isActive ? { zIndex: negIndex } : { zIndex: posIndex }}
-//     />
-//     <img
-//       src="https://media.discordapp.net/attachments/314196129694613504/774726039494459412/sktugffqhtx51.png?width=896&height=672"
-//       alt={id}
-//       className={isActive ? "UtilityPageImg2" : "UtilityPageImg1"}
-//       style={isActive ? { zIndex: posIndex } : { zIndex: negIndex }}
-//     />
-//   </div>
-//   <div className="parent2">
-//     <img src={util_land} className="UtilityPageImgExtra" />
-//   </div>
-// </div>

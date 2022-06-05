@@ -1,9 +1,42 @@
 .UtilityPage {
+  padding: 0rem 3rem;
   margin: 2rem auto;
-  width: 80rem;
+  max-width: 80rem;
+  min-width: 40rem;
   text-align: center;
   /* border-style: solid;
   border-color: red; */
+}
+.ImageHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background-color: royalblue;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ImageHeaderText {
+  width: 20rem;
+  border-style: solid;
+  border-color: rgb(29, 47, 100);
+  border-width: 0.125rem;
+  border-left-width: 0.063rem;
+  border-right-width: 0.063rem;
+}
+.ImageHeaderText > p {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.HeaderText {
+  font-weight: bold;
+  font-size: medium;
+}
+.SubtitleText {
+  font-weight: normal;
+  font-size: larger;
 }
 
 .CHstyle {
@@ -19,71 +52,12 @@
   width: 80rem;
 }
 
-.ImageHeader {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  background-color: royalblue;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.ImageHeaderText {
-  width: 20rem;
-  border-style: solid;
-  border-color: rgb(29, 47, 100);
-  border-width: 0.125rem;
-  border-left-width: 0.063rem;
-  border-right-width: 0.063rem;
-}
-
-.ImageHeaderText > p {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.HeaderText {
-  font-weight: bold;
-  font-size: medium;
-}
-.SubtitleText {
-  font-weight: normal;
-  font-size: larger;
-}
-
 .ImageButtons {
   display: flex;
   position: absolute;
   z-index: 1;
   float: right;
   padding-top: 0.063rem;
-}
-
-.crosshair {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.6;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
 }
 
 .BackgroundColor {
