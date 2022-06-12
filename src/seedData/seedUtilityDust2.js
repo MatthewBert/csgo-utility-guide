@@ -54,7 +54,7 @@ export default [
   {
     map: "de_dust2",
     mapTitle: "Dust2",
-    type: "Molly",
+    type: "Molotov",
     icon: Molly_Grenade,
     side: "Terrorist",
     start_location: "Long A Barrel",
@@ -72,7 +72,7 @@ export default [
   {
     map: "de_dust2",
     mapTitle: "Dust2",
-    type: "Molly",
+    type: "Molotov",
     icon: Molly_Grenade,
     side: "Terrorist",
     start_location: "Outside B Tunnel",

@@ -38,29 +38,6 @@ function UtilityPage() {
           video={video}
         />
       </div>
-      // <div className="BackgroundColor">
-      //   <div className="ImageButtons">
-      //     <Button
-      //       variant="contained"
-      //       onClick={() => setSelectedMedia(media.img_throw)}
-      //     >
-      //       Where to Throw
-      //     </Button>
-      //     <Button
-      //       variant="contained"
-      //       onClick={() => setSelectedMedia(media.img_stand)}
-      //     >
-      //       Where to Stand
-      //     </Button>
-      //     <Button
-      //       variant="contained"
-      //       onClick={() => setSelectedMedia(media.video)}
-      //     >
-      //       Video
-      //     </Button>
-      //   </div>
-      //   <img src={selectedMedia} alt={id} className="UtilityPageImg" />
-      // </div>
     );
   };
 
