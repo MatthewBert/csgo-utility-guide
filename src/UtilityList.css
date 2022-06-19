@@ -4,8 +4,8 @@
   max-width: 80rem;
   min-width: 40rem;
   text-align: center;
-  border-style: solid;
-  border-color: red;
+  /* border-style: solid;
+  border-color: red; */
 }
 
 .SidebarButtons {
