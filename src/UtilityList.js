@@ -1,6 +1,5 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import UtilityCard from "./UtilityCard";
-import { Grid } from "@material-ui/core";
 import seedUtilityDust2 from "./seedData/seedUtilityDust2";
 import seedUtilityVertigo from "./seedData/seedUtilityVertigo";
 import "./UtilityList.css";
@@ -22,11 +21,12 @@ export class UtilityList extends Component {
     switch (id) {
       case "de_dust2":
         return seedUtilityDust2.map((utility) => {
-          if (this.state.setFilterType == "All") {
+          if (this.state.setFilterType === "All") {
             return <UtilityCard {...utility} key={utility.id} />;
-          } else if (this.state.setFilterType == utility.type) {
+          } else if (this.state.setFilterType === utility.type) {
             return <UtilityCard {...utility} key={utility.id} />;
           }
+          return null;
         });
 
       case "de_mirage":
@@ -65,31 +65,31 @@ export class UtilityList extends Component {
         <div className="SidebarButtons">
           <div className="ButtonHeaderUtil">
             <button
-              value="all"
+              value="All"
               onClick={() => this.setState({ setFilterType: "All" })}
             >
               ALL
             </button>
             <button
-              value="smoke"
+              value="Smoke"
               onClick={() => this.setState({ setFilterType: "Smoke" })}
             >
               SMOKE
             </button>
             <button
-              value="flash"
+              value="Flash"
               onClick={() => this.setState({ setFilterType: "Flash" })}
             >
               FLASH
             </button>
             <button
-              value="molly"
+              value="Molotov"
               onClick={() => this.setState({ setFilterType: "Molotov" })}
             >
               MOLOTOV
             </button>
             <button
-              value="explosive"
+              value="Explosive"
               onClick={() => this.setState({ setFilterType: "Explosive" })}
             >
               EXPLOSIVE

@@ -9,7 +9,7 @@
 }
 
 .SidebarButtons {
-    display: block;
+  display: block;
   height: 20rem; /* Full-height: remove this if you want "auto" height */
   width: 13rem; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
