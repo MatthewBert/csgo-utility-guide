@@ -8,7 +8,7 @@ import "./UtilityList.css";
 export class UtilityList extends Component {
   constructor(props) {
     super(props);
-    this.state = { setFilterType: "all", setFilterSide: "both" };
+    this.state = { setFilterType: "All" };
     this.findMap = this.findMap.bind(this);
     this.seedUtility = this.seedUtility.bind(this);
   }
@@ -22,25 +22,15 @@ export class UtilityList extends Component {
     switch (id) {
       case "de_dust2":
         return seedUtilityDust2.map((utility) => {
-          return <UtilityCard {...utility} key={utility.id} />;
+          if (this.state.setFilterType == "All") {
+            return <UtilityCard {...utility} key={utility.id} />;
+          } else if (this.state.setFilterType == utility.type) {
+            return <UtilityCard {...utility} key={utility.id} />;
+          }
         });
 
       case "de_mirage":
-        if (this.setFilterType === "all") {
-          return (
-            <div>
-              <p>MIRAGE ALL </p>
-              <p>{this.setFilterType}</p>
-            </div>
-          );
-        } else {
-          return (
-            <div>
-              <p>MIRAGE NOT ALL </p>
-              <p>{this.setFilterType}</p>
-            </div>
-          );
-        }
+        return <h1>Mirage Goes here</h1>;
 
       case "de_inferno":
         return <h1>Inferno Goes here</h1>;
@@ -67,61 +57,40 @@ export class UtilityList extends Component {
     }
   }
 
-
   //componentDidUpdate(filterType, filterSide);
 
   render() {
     return (
       <div className="UtilityList">
         <div className="SidebarButtons">
-          <div className="ButtonHeaderSides">
-            <button
-              value="both"
-              onClick={() => this.setState({ setFilterSide: "both" })}
-            >
-              BOTH
-            </button>
-            <button
-              value="ct"
-              onClick={() => this.setState({ setFilterSide: "ct" })}
-            >
-              CT
-            </button>
-            <button
-              value="t"
-              onClick={() => this.setState({ setFilterSide: "t" })}
-            >
-              T
-            </button>
-          </div>
           <div className="ButtonHeaderUtil">
             <button
               value="all"
-              onClick={() => this.setState({ setFilterType: "all" })}
+              onClick={() => this.setState({ setFilterType: "All" })}
             >
               ALL
             </button>
             <button
               value="smoke"
-              onClick={() => this.setState({ setFilterType: "smoke" })}
+              onClick={() => this.setState({ setFilterType: "Smoke" })}
             >
               SMOKE
             </button>
             <button
               value="flash"
-              onClick={() => this.setState({ setFilterType: "flash" })}
+              onClick={() => this.setState({ setFilterType: "Flash" })}
             >
               FLASH
             </button>
             <button
               value="molly"
-              onClick={() => this.setState({ setFilterType: "molly" })}
+              onClick={() => this.setState({ setFilterType: "Molotov" })}
             >
               MOLOTOV
             </button>
             <button
               value="explosive"
-              onClick={() => this.setState({ setFilterType: "explosive" })}
+              onClick={() => this.setState({ setFilterType: "Explosive" })}
             >
               EXPLOSIVE
             </button>
@@ -130,9 +99,6 @@ export class UtilityList extends Component {
         <div className="container">{this.seedUtility(this.findMap())}</div>
         <p>
           SET FILTER TYPE: <b>{this.state.setFilterType}</b>
-        </p>
-        <p>
-          SET FILTER SIDE: <b>{this.state.setFilterSide}</b>
         </p>
       </div>
     );
