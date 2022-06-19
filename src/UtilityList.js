@@ -13,13 +13,14 @@ export class UtilityList extends Component {
   }
   findMap() {
     var URL = window.location.href;
-    var URLpos = URL.search("de");
+    var URLpos = URL.search("De");
     var URLid = URL.substr(URLpos);
+    console.log("FOUND MAP: ", URLid)
     return URLid;
   }
   seedUtility(id) {
     switch (id) {
-      case "de_dust2":
+      case "De_dust2":
         return seedUtilityDust2.map((utility) => {
           if (this.state.setFilterType === "All") {
             return <UtilityCard {...utility} key={utility.id} />;
@@ -29,27 +30,27 @@ export class UtilityList extends Component {
           return null;
         });
 
-      case "de_mirage":
+      case "De_mirage":
         return <h1>Mirage Goes here</h1>;
 
-      case "de_inferno":
+      case "De_inferno":
         return <h1>Inferno Goes here</h1>;
 
-      case "de_overpass":
+      case "De_overpass":
         return <h1>Overpass Goes here</h1>;
 
-      case "de_vertigo":
+      case "De_vertigo":
         return seedUtilityVertigo.map((utility) => {
           return <UtilityCard {...utility} key={utility.id} />;
         });
 
-      case "de_nuke":
+      case "De_nuke":
         return <h1>Nuke Goes here</h1>;
 
-      case "de_train":
+      case "De_train":
         return <h1>Train Goes here</h1>;
 
-      case "de_cache":
+      case "De_cache":
         return <h1>Cache Goes here</h1>;
 
       default:

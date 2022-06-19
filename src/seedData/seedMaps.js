@@ -10,42 +10,42 @@ import cache from "../img/map-img/imgcache.jpg";
 export default [
   {
     mapName: "Dust 2",
-    id: "de_dust2",
+    id: "De_dust2",
     img: dust2,
   },
   {
     mapName: "Mirage",
-    id: "de_mirage",
+    id: "De_mirage",
     img: mirage,
   },
   {
     mapName: "Inferno",
-    id: "de_inferno",
+    id: "De_inferno",
     img: inferno,
   },
   {
     mapName: "Overpass",
-    id: "de_overpass",
+    id: "De_overpass",
     img: overpass,
   },
   {
     mapName: "Vertigo",
-    id: "de_vertigo",
+    id: "De_vertigo",
     img: vertigo,
   },
   {
     mapName: "Nuke",
-    id: "de_nuke",
+    id: "De_nuke",
     img: nuke,
   },
   {
     mapName: "Train",
-    id: "de_train",
+    id: "De_train",
     img: train,
   },
   {
     mapName: "Cache",
-    id: "de_cache",
+    id: "De_cache",
     img: cache,
   },
   {
