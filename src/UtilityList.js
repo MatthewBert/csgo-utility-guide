@@ -78,7 +78,7 @@ export class UtilityList extends Component {
   render() {
     return (
       <div className="UtilityList">
-        <div className="SidebarButtons">
+        <div className="FilterButtons">
           <div className="ButtonHeaderUtil">
             <button
               value="All"
@@ -110,10 +110,10 @@ export class UtilityList extends Component {
             >
               EXPLOSIVE
             </button>
+          </div>
             <p style={{ color: "white" }}>
               SET FILTER TYPE: <b>{this.state.setFilterType}</b>
             </p>
-          </div>
         </div>
         <div className="container">{this.seedUtility(this.findMap())}</div>
       </div>
