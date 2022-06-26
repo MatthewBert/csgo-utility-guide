@@ -14,6 +14,11 @@ export default [
     img: dust2,
   },
   {
+    mapName: "Vertigo",
+    id: "De_vertigo",
+    img: vertigo,
+  },
+  {
     mapName: "Mirage",
     id: "De_mirage",
     img: mirage,
@@ -29,19 +34,9 @@ export default [
     img: overpass,
   },
   {
-    mapName: "Vertigo",
-    id: "De_vertigo",
-    img: vertigo,
-  },
-  {
     mapName: "Nuke",
     id: "De_nuke",
     img: nuke,
-  },
-  {
-    mapName: "Train",
-    id: "De_train",
-    img: train,
   },
   {
     mapName: "Cache",
@@ -49,8 +44,13 @@ export default [
     img: cache,
   },
   {
-    mapName: "POOPOOPEEPEE",
-    id: "poopoo",
-    img: dust2,
+    mapName: "Train",
+    id: "De_train",
+    img: train,
+  },
+  {
+    mapName: "Industry",
+    id: "De_industry",
+    img: "https://steamuserimages-a.akamaihd.net/ugc/1690524019703145034/AF26C40F3C27309A8FC4F0A5DD8A18FC491F3CD4/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=false",
   },
 ];

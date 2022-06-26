@@ -15,7 +15,7 @@ export class UtilityList extends Component {
     var URL = window.location.href;
     var URLpos = URL.search("De");
     var URLid = URL.substr(URLpos);
-    console.log("FOUND MAP: ", URLid)
+    console.log("FOUND MAP: ", URLid);
     return URLid;
   }
   seedUtility(id) {
@@ -31,34 +31,49 @@ export class UtilityList extends Component {
         });
 
       case "De_mirage":
-        return <h1>Mirage Goes here</h1>;
+        return <h1>Mirage Utility Coming Soon!</h1>;
 
       case "De_inferno":
-        return <h1>Inferno Goes here</h1>;
+        return <h1>Inferno Utility Coming Soon!</h1>;
 
       case "De_overpass":
-        return <h1>Overpass Goes here</h1>;
+        return <h1>Overpass Utility Coming Soon!</h1>;
 
       case "De_vertigo":
         return seedUtilityVertigo.map((utility) => {
-          return <UtilityCard {...utility} key={utility.id} />;
+          if (this.state.setFilterType === "All") {
+            return <UtilityCard {...utility} key={utility.id} />;
+          } else if (this.state.setFilterType === utility.type) {
+            return <UtilityCard {...utility} key={utility.id} />;
+          }
+          return null;
         });
 
       case "De_nuke":
-        return <h1>Nuke Goes here</h1>;
+        return <h1>Nuke Utility Coming Soon!</h1>;
 
       case "De_train":
-        return <h1>Train Goes here</h1>;
+        return <h1>Train Utility Coming Soon!</h1>;
 
       case "De_cache":
-        return <h1>Cache Goes here</h1>;
+        return <h1>Cache Utility Coming Soon!</h1>;
 
       default:
-        return <h1>THIS MAP DOESNT EXIST</h1>;
+        return (
+          <div>
+            <h1>Industry Utility Coming Soon!</h1>
+            <p style={{ fontSize: "10px" }}>maybe perhaps...</p>
+            <a
+              style={{ fontSize: "40px" }}
+              href="https://steamcommunity.com/sharedfiles/filedetails/?id=290336945"
+              target="_blank"
+            >
+              vist the workshop map here
+            </a>
+          </div>
+        );
     }
   }
-
-  //componentDidUpdate(filterType, filterSide);
 
   render() {
     return (
@@ -95,102 +110,15 @@ export class UtilityList extends Component {
             >
               EXPLOSIVE
             </button>
+            <p style={{ color: "white" }}>
+              SET FILTER TYPE: <b>{this.state.setFilterType}</b>
+            </p>
           </div>
         </div>
         <div className="container">{this.seedUtility(this.findMap())}</div>
-        <p>
-          SET FILTER TYPE: <b>{this.state.setFilterType}</b>
-        </p>
       </div>
     );
   }
 }
 
 export default UtilityList;
-
-// import React, { useState } from "react";
-// import UtilityCard from "./UtilityCard";
-// import seedUtilityDust2 from "./seedData/seedUtilityDust2";
-// import seedUtilityVertigo from "./seedData/seedUtilityVertigo";
-// import "./UtilityList.css";
-
-// //need https://reactjs.org/docs/hooks-state.html to create state
-// //lifting state https://reactjs.org/docs/lifting-state-up.html#:~:text=In%20React%2C%20sharing%20state%20is,it%20into%20the%20Calculator%20instead.
-// //using state will let react know to re-render after the state has
-// //updated with the respected filter buttons
-
-// function findMap() {
-//   var URL = window.location.href;
-//   var URLpos = URL.search("de");
-//   var URLid = URL.substr(URLpos);
-//   return URLid;
-// }
-
-// function RenderUtilList(mapName) {
-//   switch (mapName) {
-//     case "de_dust2":
-//     return seedUtilityDust2.map((utility) => {
-//       return <UtilityCard {...utility} key={utility.id} />;
-//     });
-
-//     case "de_mirage":
-//       return <h1>Mirage Goes here</h1>;
-
-//     case "de_inferno":
-//       return <h1>Inferno Goes here</h1>;
-
-//     case "de_overpass":
-//       return <h1>Overpass Goes here</h1>;
-
-//     case "de_vertigo":
-//       return seedUtilityVertigo.map((utility) => {
-//         return <UtilityCard {...utility} key={utility.id} />;
-//       });
-
-//     case "de_nuke":
-//       return <h1>Nuke Goes here</h1>;
-
-//     case "de_train":
-//       return <h1>Train Goes here</h1>;
-
-//     case "de_cache":
-//       return <h1>Cache Goes here</h1>;
-
-//     default:
-//       return <h1>THIS MAP DOESNT EXIST</h1>;
-//   }
-// }
-
-// export default function UtilityList() {
-//   const [filterType, setFilterType] = useState("all");
-//   return (
-//     <div className="UtilityList">
-//       <div className="SidebarButtons">
-//         <div className="ButtonHeaderSides">
-//           <button>BOTH</button>
-//           <button>CT</button>
-//           <button>T</button>
-//         </div>
-//         <div className="ButtonHeaderUtil">
-//           <button value="all" onClick={() => setFilterType("all")}>
-//             ALL
-//           </button>
-//           <button value="smoke" onClick={() => setFilterType("smoke")}>
-//             SMOKE
-//           </button>
-//           <button value="flash" onClick={() => setFilterType("flash")}>
-//             FLASH
-//           </button>
-//           <button value="molly" onClick={() => setFilterType("molotov")}>
-//             MOLOTOV
-//           </button>
-//           <button value="explosive" onClick={() => setFilterType("explosive")}>
-//             EXPLOSIVE
-//           </button>
-//         </div>
-//       </div>
-//       <div className="container">{RenderUtilList(findMap())}</div>
-//       <p>{filterType}</p>
-//     </div>
-//   );
-// }

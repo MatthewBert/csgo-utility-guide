@@ -49,7 +49,7 @@ export default function UtilityPageImage({
         />
         <img
           onClick={handleToggle3}
-          src="https://wallpaperaccess.com/full/2807743.jpg"
+          src={img_stand}
           alt={id}
           className={isActive3 ? "UtilityPageImgGrid" : "UtilityPageImgView"}
         />

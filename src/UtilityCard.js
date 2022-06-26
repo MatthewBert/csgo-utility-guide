@@ -8,8 +8,9 @@ export class UtilityCard extends Component {
       map,
       mapTitle,
       type,
-      icon,
+      util_icon,
       side,
+      side_icon,
       start_location,
       land_location,
       movement,
@@ -30,8 +31,9 @@ export class UtilityCard extends Component {
           map: map,
           mapTitle: mapTitle,
           type: type,
-          icon: icon,
+          util_icon: util_icon,
           side: side,
+          side_icon: side_icon,
           start_location: start_location,
           land_location: land_location,
           movement: movement,
@@ -46,7 +48,8 @@ export class UtilityCard extends Component {
       >
         <div>
           <div className="UtilityCard">
-            <img className="Icon-image" alt={type} src={icon} />
+            <img className="Icon-image-util" alt={type} src={util_icon} />
+            <img className="Icon-image-side" alt={type} src={side_icon} />
             <div className="gallery__images">
               <img src={img_throw} alt={id} className="UtilityCard-image-pov" />
               <div className="UtilityCard-image-land-container">

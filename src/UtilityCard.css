@@ -62,18 +62,29 @@
   border: 0.125rem solid black;
   border-top: 0rem;
   margin: 0;
-  min-height: 5rem;
+  min-height: 4.8rem;
   width: 24rem;
   text-align: center;
 }
 
-.Icon-image {
+.Icon-image-util {
   position: absolute;
   height: 3rem;
   width: 3rem;
   z-index: 1;
   top: 0;
   left: 0;
+  border-right: 0.125rem solid black;
+  border-bottom: 0.125rem solid black;
+  background-color: rgb(65, 105, 225);
+}
+.Icon-image-side {
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  z-index: 2;
+  top: 0;
+  left: 3rem;
   border-right: 0.125rem solid black;
   border-bottom: 0.125rem solid black;
   background-color: rgb(65, 105, 225);
