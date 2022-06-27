@@ -111,8 +111,8 @@ export class UtilityList extends Component {
               EXPLOSIVE
             </button>
           </div>
-            <p style={{ color: "white" }}>
-              SET FILTER TYPE: <b>{this.state.setFilterType}</b>
+            <p>
+              FILTER UTILITY TYPE: <b>{this.state.setFilterType}</b>
             </p>
         </div>
         <div className="container">{this.seedUtility(this.findMap())}</div>

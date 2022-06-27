@@ -14,7 +14,7 @@
   max-width: 80rem; 
   min-width: 40rem;
   z-index: 1; 
-  background-color: #111; /* Black */
+  background-color: rgb(65, 105, 225);
   overflow-x: hidden; /* Disable horizontal scroll */
   justify-content: center;
   text-align: center;

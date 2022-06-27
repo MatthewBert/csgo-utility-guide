@@ -79,7 +79,7 @@ export default function UtilityPageImage({
   images[4] = (
     <iframe
       onClick={handleToggle4}
-      src="https://www.youtube.com/embed/N_6XQp08pgM"
+      src="https://www.youtube.com/embed/O3aseNxocvo"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; "
       allowfullscreen
       alt={id}
@@ -89,7 +89,17 @@ export default function UtilityPageImage({
   images[5] = (
     <iframe
       onClick={handleToggle4}
-      src="https://www.youtube.com/embed/rP2MDtWu5t0"
+      src="https://www.youtube.com/embed/Vwmpc4oxcYQ"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; "
+      allowfullscreen
+      alt={id}
+      className={isActive4 ? "UtilityPageImgGrid" : "UtilityPageImgView"}
+    ></iframe>
+  );
+  images[6] = (
+    <iframe
+      onClick={handleToggle4}
+      src="https://www.youtube.com/embed/6sPjFigAjp4"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; "
       allowfullscreen
       alt={id}
@@ -98,7 +108,6 @@ export default function UtilityPageImage({
   );
   
   index = Math.floor(Math.random() * images.length);
-  console.log("VIDEO SELECTED: ",index)
 //END OF RANDOM VIDEO GENERATOR
   return (
     <div>
@@ -122,7 +131,9 @@ export default function UtilityPageImage({
           className={isActive3 ? "UtilityPageImgGrid" : "UtilityPageImgView"}
         />
         {images[index]}
+        {/* replace this with the youtube video when its done */}
       </div>
+        <b>THE VIDEOS YOU ARE SEEING ARE RANDOMLY GENERATED, THIS FEATURE WILL BE REMOVED ONCE I HAVE MADE VIDEOS FOR EACH LINEUP ⬆</b>
     </div>
   );
 }
