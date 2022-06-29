@@ -6,12 +6,12 @@ export class MapCard extends Component {
   render() {
     const { mapName, img, id } = this.props;
     return (
-        <Link className="MapCard-link" to={`/map/${id}`}>
-          <div className="MapCard">
-            <img className="MapCard-image" src={img} alt={id} />
-            <h1 className="MapCard-info">{mapName}</h1>
-          </div>
-        </Link>
+      <Link className="MapCard-link" to={`/map/${id}`}>
+        <div className="MapCard">
+          <img className="MapCard-image" src={img} alt={id} />
+          <div className="MapCard-info">{mapName}</div>
+        </div>
+      </Link>
     );
   }
 }

@@ -1,20 +1,32 @@
-.MapCard{
-    border: 2px solid black;
+.MapCard {
+  border: 2px solid black;
+  height: 272px;
+  width: 400px;
 }
 
-.MapCard-image{
-    height: 225px;
-    width: 400px;
-    cursor: pointer;
+.MapCard-image {
+  height: 225px;
+  width: 400px;
+  cursor: pointer;
+  z-index: 1;
 }
-.MapCard-info{
-    background-color: rgba(65, 105, 225, 0.8);
-    margin: 0px;
-    margin-top: -8px;
+.MapCard-info {
+    text-indent: .5rem;
+    font-size: xx-large;
+    font-weight: bold;
+  width: 400px;
+  height: 45px;
+  border-top: 2px solid black;
+  color: white;
+  background-color: rgb(40, 50, 60);
+  margin: 0px;
+  margin-top: -4px;
+  z-index: 2;
 }
 
-.MapCard-link{
-    text-decoration: none;
-    color: black;
-    margin: 5px 5px;
+
+.MapCard-link {
+  text-decoration: none;
+  color: black;
+  margin: 5px 5px;
 }

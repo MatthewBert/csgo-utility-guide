@@ -58,7 +58,7 @@
   border-left: 0.125rem solid black;
 }
 .UtilityCard-info {
-  background-color: rgba(65, 105, 225, 0.8);
+  background-color: rgb(40, 50, 60);
   border: 0.125rem solid black;
   border-top: 0rem;
   margin: 0;
@@ -76,7 +76,7 @@
   left: 0;
   border-right: 0.125rem solid black;
   border-bottom: 0.125rem solid black;
-  background-color: rgb(65, 105, 225);
+  background-color: rgb(40, 50, 60);
 }
 .Icon-image-side {
   position: absolute;
@@ -87,7 +87,7 @@
   left: 3rem;
   border-right: 0.125rem solid black;
   border-bottom: 0.125rem solid black;
-  background-color: rgb(65, 105, 225);
+  background-color: rgb(40, 50, 60);;
 }
 
 .UtilityCard-link:hover {
@@ -96,12 +96,14 @@
 }
 
 p.Header {
+  color: rgb(255, 255, 255);
   font-size: xx-large;
   font-weight: bold;
   margin: 0;
 }
 
 p.Subtitle {
+  color: rgb(225, 225, 225);
   font-size: x-large;
   margin: 0;
 }

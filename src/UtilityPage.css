@@ -1,8 +1,10 @@
 .UtilityPage {
   padding: 0rem 3rem;
   margin: 2rem auto;
+  margin-bottom: 0rem;
   max-width: 80rem;
   min-width: 40rem;
+  min-height: 66.25rem;
   text-align: center;
   /* border-style: solid;
   border-color: red; */
@@ -12,7 +14,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  background-color: royalblue;
+  background-color: rgba(45, 55, 65, 0.8);
   color: white;
   margin-left: auto;
   margin-right: auto;
@@ -20,7 +22,7 @@
 .ImageHeaderText {
   width: 20rem;
   border-style: solid;
-  border-color: rgb(29, 47, 100);
+  border-color: rgb(40, 50, 60);
   border-width: 0.125rem;
   border-left-width: 0.063rem;
   border-right-width: 0.063rem;
