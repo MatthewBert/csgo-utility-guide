@@ -6,6 +6,7 @@ import overpass from "../img/map-img/imgoverpass.jpg";
 import vertigo from "../img/map-img/imgvertigo.jpg";
 import train from "../img/map-img/imgtrain.jpg";
 import cache from "../img/map-img/imgcache.jpg";
+import ancient from "../img/map-img/imgancient.jpg";
 
 export default [
   {
@@ -37,6 +38,11 @@ export default [
     mapName: "Nuke",
     id: "De_nuke",
     img: nuke,
+  },
+  {
+    mapName: "Ancient",
+    id: "De_ancient",
+    img: ancient,
   },
   {
     mapName: "Cache",

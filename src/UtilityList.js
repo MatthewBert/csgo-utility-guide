@@ -58,7 +58,10 @@ export class UtilityList extends Component {
       case "De_cache":
         return <h1>Cache Utility Coming Soon!</h1>;
 
-      default:
+      case "De_ancient":
+        return <h1>Ancient Utility Coming Soon!</h1>;
+
+      case "De_ancient":
         return (
           <div>
             <h1>Industry Utility Coming Soon!</h1>
@@ -72,6 +75,10 @@ export class UtilityList extends Component {
             </a>
           </div>
         );
+
+      default:
+        return <h1>THIS MAP DOES NOT EXIST</h1>
+
     }
   }
 
@@ -111,9 +118,9 @@ export class UtilityList extends Component {
               EXPLOSIVE
             </button>
           </div>
-            <p>
-              FILTER UTILITY TYPE: <b>{this.state.setFilterType}</b>
-            </p>
+          <p>
+            FILTER UTILITY TYPE: <b>{this.state.setFilterType}</b>
+          </p>
         </div>
         <div className="container">{this.seedUtility(this.findMap())}</div>
       </div>
